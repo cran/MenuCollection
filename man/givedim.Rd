@@ -10,4 +10,4 @@
 \value{numeric vector of integers}
 \author{Gianmarco Polotti}
 \examples{givedim('1:3,8,7')}
-\keyword{ input box}
+\keyword{ Assignment }

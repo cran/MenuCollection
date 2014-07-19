@@ -8,7 +8,8 @@
   \item{vcombo}{character vector with the text label of the combo}
   \item{inp}{character vector with the initialization}
 }
-\details{\figure{inpboxe2c.png}
+\details{See example for the element order in the vectors\cr
+\figure{inpboxe2c.png}\cr
 To get the menu just use the following code:\cr
 \code{vlabel<-c('matrix1','matrix2','combo')}\cr
 \code{vcombo<-c('a','b','c','d')}\cr

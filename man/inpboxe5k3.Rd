@@ -8,7 +8,8 @@
   \item{inp}{character vector with the initialization}
   \item{dis}{logical value with to disable last option}
 }
-\details{\figure{inpboxe5k3.png}
+\details{See example for the element order in the vectors\cr
+\figure{inpboxe5k3.png}\cr
 To get the menu just use the following code:\cr
 \code{vlabel<-c('matrix1','matrix2','matrix3','matrix4','matrix5','option1','option2','option3')}\cr
 \code{inp<-c('M','N','S','T','U','TRUE','FALSE','TRUE')}\cr

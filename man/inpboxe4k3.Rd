@@ -7,7 +7,8 @@
   \item{vlabel}{character vector with the text label of the box}
   \item{inp}{character vector with the initialization}
 }
-\details{\figure{inpboxe4k3.png}
+\details{See example for the element order in the vectors\cr
+\figure{inpboxe4k3.png}\cr
 To get the menu just use the following code:\cr
 \code{vlabel<-c('matrix1','matrix2','matrix3','matrix4','option1','option2','option3')}\cr
 \code{inp<-c('M','N','S','T','TRUE','FALSE','TRUE')}\cr

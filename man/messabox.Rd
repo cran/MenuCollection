@@ -6,7 +6,8 @@
 \arguments{
   \item{vlabel}{text of the message in the box}
 }
-\details{\figure{messagebox.png}
+\details{See example for the element order in the vectors\cr
+\figure{messagebox.png}\cr
 To get the menu just use the following code:\cr
 \code{vlabel<-'Wrong matrix dimension !'}\cr
 \code{ans<-messagebox(vlabel)}\cr

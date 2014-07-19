@@ -9,7 +9,8 @@
   \item{vcombo2}{character vector with the text label of the combo}
   \item{inp}{character vector with the initialization}
 }
-\details{\figure{inpboxc2k.png}
+\details{See example for the element order in the vectors\cr
+\figure{inpboxc2k.png}\cr
 To get the menu just use the following code:\cr
 \code{vlabel<-c('list1','list2','choice ')}\cr
 \code{vcombo1<-c('a1','b1','c1','d1')}\cr

@@ -16,4 +16,4 @@
 \value{Color vector of the same length of the input data vector}
 \author{Gianmarco Polotti}
 \examples{dovc(1:30)}
-\keyword{ input boxes }
+\keyword{ Assignment }

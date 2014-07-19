@@ -7,7 +7,8 @@
   \item{vnames}{character vector with the text label of the box}
   \item{ltitle}{title of the vector}
 }
-\details{\figure{inpboxlist.png}
+\details{See example for the element order in the vectors\cr
+\figure{inpboxlist.png}\cr
 To get the menu just use the following code:\cr
 \code{vnames<-as.character(1:20)}\cr
 \code{ltitle<-'Number choice'}\cr

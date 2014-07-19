@@ -6,7 +6,8 @@
 \arguments{
   \item{vlabel}{text of the question}
 }
-\details{\figure{messageyesno.png}
+\details{See example for the element order in the vectors\cr
+\figure{messageyesno.png}\cr
 To get the menu just use the following code:\cr
 \code{vlabel<-'Variable Exists.Overwrite ?'}\cr
 \code{ans<-messageyesno(vlabel)}\cr

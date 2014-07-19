@@ -2559,7 +2559,7 @@ inpboxk6<-function(vlabel,inp){
 	table$setColSpacing(0,5)
 	window<-gtkWindow(show=FALSE)
 	window['border-width']<-14
-	window$setTitle('Loading Bar Table')
+	window$setTitle('Input Choice')
 	window$SetDeletable(FALSE)
 	window$add(table)
 	window$showAll()
@@ -2569,11 +2569,11 @@ inpboxk6<-function(vlabel,inp){
 	return(ans)
 }
 
-inpboxk7k7<-function(vlabel,inp){
+inpboxk7k7<-function(vlabel,vtitle,inp){
 	table<-gtkTable(rows=11,columns=4,homogeneous=FALSE)
 	label_hbox<-gtkHBox()
-	mainlab1<-gtkLabel('Input')
-	mainlab2<-gtkLabel('Output')
+	mainlab1<-gtkLabel(vtitle[1])
+	mainlab2<-gtkLabel(vtitle[2])
 	label_hbox$packStart(mainlab1,expand=TRUE)	
 	label_hbox$packEnd(mainlab2,expand=TRUE)
 	diag_label<-gtkVBox()
@@ -2650,7 +2650,7 @@ inpboxk7k7<-function(vlabel,inp){
 	table$setColSpacing(0,5)
 	window<-gtkWindow(show=FALSE)
 	window['border-width']<-14
-	window$setTitle('Digital I/O')
+	window$setTitle('Input Choice')
 	window$SetDeletable(FALSE)
 	window$add(table)
 	window$showAll()
@@ -3084,11 +3084,11 @@ inpboxlist<-function(vnames,ltitle){
 	return(ans)
 }
 
-inpboxk6k6e6<-function(vlabel,inp){
+inpboxk6k6e6<-function(vlabel,vtitle,inp){
 	table<-gtkTable(rows=11,columns=8,homogeneous=FALSE)
 	label_hbox<-gtkHBox()
-	mainlab1<-gtkLabel('Input')
-	mainlab2<-gtkLabel('Output')
+	mainlab1<-gtkLabel(vtitle[1])
+	mainlab2<-gtkLabel(vtitle[2])
 	label_hbox$packStart(mainlab1,expand=TRUE)
 	label_hbox$packEnd(mainlab2,expand=TRUE)
 	diag_label<-gtkVBox()
@@ -3200,7 +3200,7 @@ inpboxk6k6e6<-function(vlabel,inp){
 	table$setColSpacing(0,5)
 	window<-gtkWindow(show=FALSE)
 	window['border-width']<-14
-	window$setTitle('Analog I/O')
+	window$setTitle('Input Choice')
 	window$SetDeletable(FALSE)
 	window$add(table)
 	window$showAll()
