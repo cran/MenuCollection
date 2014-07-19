@@ -1,0 +1,19 @@
+\name{inpboxe4k}
+\alias{inpboxe4k}
+\title{Input Box with four edit boxes and a check box}
+\description{Input box for multiple inputs}
+\usage{inpboxe4k(vlabel,inp)}
+\arguments{
+  \item{vlabel}{character vector with the text label of the box}
+  \item{inp}{character vector with the initialization}
+}
+\details{\figure{inpboxe4k.png}
+To get the menu just use the following code:\cr
+\code{vlabel<-c('matrix1','matrix2','matrix3','matrix4','option')}\cr
+\code{inp<-c('M','N','S','T','TRUE')}\cr
+\code{ans<-inpboxe4k(vlabel,inp)}\cr
+}
+\value{list with the user answers as character}
+\references{Lawrence M.F.,Verzani J., (2012) \emph{Programming Graphical User Interfaces in R},CRC Press Taylor & Francis Group}
+\author{Gianmarco Polotti}
+\keyword{ input box }
