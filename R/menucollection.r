@@ -1944,7 +1944,7 @@ inpboxe4c2<-function(vlabel,vcombo1,vcombo2,inp){
 	return(ans)
 }
 
-inpboxe4ck<-function(vlabel,vcombo1,inp){
+inpboxe4ck<-function(vlabel,vcombo,inp){
 	table<-gtkTable(rows=7,columns=2,homogeneous=FALSE)
 	diag_label<-gtkVBox()
 	labelgp<-list()
@@ -1964,17 +1964,17 @@ inpboxe4ck<-function(vlabel,vcombo1,inp){
 	entry3$SetText(inp[3])
 	entry4<-gtkEntryNew()
 	entry4$SetText(inp[4])
-	combo1<-gtkComboBoxNewText()
-	sapply(vcombo1,combo1$appendText)
-	combo1$SetActive(as.integer(inp[5]))
-	check1<-gtkCheckButtonNewWithLabel(label='')
-	check1$SetActive(as.logical(inp[6]))
+	combo<-gtkComboBoxNewText()
+	sapply(vcombo,combo$appendText)
+	combo$SetActive(as.integer(inp[5]))
+	check<-gtkCheckButtonNewWithLabel(label='')
+	check$SetActive(as.logical(inp[6]))
 	diag_entry$packStart(entry1)
 	diag_entry$packStart(entry2)
 	diag_entry$packStart(entry3)
 	diag_entry$packStart(entry4)
-	diag_entry$packStart(combo1)
-	diag_entry$packStart(check1)
+	diag_entry$packStart(combo)
+	diag_entry$packStart(check)
 	submit_hbox<-gtkHBox()
 	button_ok<-gtkButton("OK")
 	button_canc<-gtkButton("Cancel")
@@ -1985,8 +1985,8 @@ inpboxe4ck<-function(vlabel,vcombo1,inp){
 								entry2$getText(),
 								entry3$getText(),
 								entry4$getText(),
-								combo1$getActive()+1,
-								gtkToggleButtonGetActive(check1)))
+								combo$getActive()+1,
+								gtkToggleButtonGetActive(check)))
 		gtkMainQuit()
 		}
 	)
@@ -3159,13 +3159,13 @@ inpboxk6k6e6<-function(vlabel,vtitle,inp){
 	gSignalConnect(button_ok,"clicked",f=function(button_ok){
 		button_ok$setData('ans',list(c(gtkToggleButtonGetActive(check1gp$t1),
 								gtkToggleButtonGetActive(check1gp$t2),
-								gtkToggleButtonGetActive(check1gp$t2),
+								gtkToggleButtonGetActive(check1gp$t3),
 								gtkToggleButtonGetActive(check1gp$t4),
 								gtkToggleButtonGetActive(check1gp$t5),
 								gtkToggleButtonGetActive(check1gp$t6)),
 								c(gtkToggleButtonGetActive(check2gp$t1),
 								gtkToggleButtonGetActive(check2gp$t2),
-								gtkToggleButtonGetActive(check2gp$t2),
+								gtkToggleButtonGetActive(check2gp$t3),
 								gtkToggleButtonGetActive(check2gp$t4),
 								gtkToggleButtonGetActive(check2gp$t5),
 								gtkToggleButtonGetActive(check2gp$t6)),

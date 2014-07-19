@@ -4,13 +4,13 @@
 \description{Color vector definition for multiple plots}
 \usage{dovc(d)}
 \arguments{
-  \item{d}{Data vector (numeric or characters) of arbitrary length}
+  \item{d }{data vector (numeric or character) of arbitrary length}
 }
-\details{Define the colors to associate a data vector following defined criteria
+\details{Define a color for each data following these criteria:
 \itemize{
-\item {if d is a character vector with length <20 : output a list from defined colors}
-\item {if d is a character vector with length >20 : output a list from selected rainbow}
-\item {if d is a numeric vector with whatever length: output a list from blu-red scale}
+\item {if \code{d} is a character vector with length <20 : output a fixed list of different colors}
+\item {if \code{d} is a character vector with length >20 : output a list of colors from the rainbow set}
+\item {if \code{d} is a numeric vector: output a list of colors in the blue-red scale}
 }
 }
 \value{Color vector of the same length of the input data vector}
